@@ -61,7 +61,7 @@ const CategoryBar = () => {
     setLoadingCategory(categoryTitle)
   }
   return (
-    <div className="w-full py-3 mt-22 ">
+    <div className="w-full py-3  ">
       <div className="container mx-auto flex justify-center gap-1 overflow-x-auto px-4 md:gap-10">
         {/* Dropdown Menü */}
         

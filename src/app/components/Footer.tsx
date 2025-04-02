@@ -8,8 +8,8 @@ import { FaXTwitter } from 'react-icons/fa6'
 const Footer = () => {
   return (
     <div>
-      <div className="p-5 h-50 md:flex-col bg-gray-100">
-      <div className="flex justify-between max-w-6xl mx-auto mt-5">
+      <div className="p-5 h-50  bg-gray-100">
+      <div className="flex   md:flex-row justify-between max-w-6xl mx-auto mt-5">
         <Link href={"/contact"} className="flex-1 text-green-950">
           <h3 className="font-bold text-lg mb-2">Yardim</h3>
           <p>SSS</p>
