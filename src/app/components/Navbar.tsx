@@ -24,7 +24,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import Image from "next/image";
 
 const Navbar = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const router = useRouter();
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           >
             <FaUser size={24} />
             <p className="hidden md:block text-xs font-semibold">
-              {isAuthenticated ? "Profilim" : "Giriş Yap"}
+             Giriş Yap
             </p>
           </div>
           <DropdownMenu>
