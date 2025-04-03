@@ -8,10 +8,11 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import {  FaBars, FaTimes } from "react-icons/fa";
-import { Category } from "@/lib";
+import { Categories, Category } from "@/lib";
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button";
+
 
 const TopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
@@ -45,16 +46,28 @@ const TopBar = () => {
             <Link href="/" className="block text-gray-700 hover:text-red-600">
               Anasayfa
             </Link>
-            <Link href="/blog" className="block text-gray-700 hover:text-red-600">
-              Blog
-            </Link>
-            <Link href="/blogs" className="block text-gray-700 hover:text-red-600">
-              Blog Detayları
-            </Link>
+            <h3 className="text-lg font-semibold text-gray-700 mt-6">Kategoriler</h3>
+            <div className="flex flex-col gap-4 mt-2">
+            {Categories.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <Link
+                  key={index}
+                  href={item.url}
+                  className="flex items-center gap-2 text-gray-700 hover:text-red-600"
+                >
+                  <Icon />
+                  {item.title}
+                </Link>
+              );
+            })}
+          </div>
+ 
           </div>
 
           {/* Kategoriler */}
-          <h3 className="text-lg font-semibold text-gray-700 mt-6">Kategoriler</h3>
+          
+          
           <div className="flex flex-col gap-4 mt-2">
             {Category.map((item, index) => {
               const Icon = item.icon;

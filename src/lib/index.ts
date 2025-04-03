@@ -1,7 +1,7 @@
 import { TbGiftCard, TbShoe, TbShirt, TbSoccerField, TbPerfume, TbWoman } from "react-icons/tb";
 import { FaTags,  FaStar } from "react-icons/fa";
 import { BsFillBagFill } from "react-icons/bs";
-
+import { IoCarSport, IoShirt, IoPhonePortrait, IoHome } from "react-icons/io5";
 
 export const NavMenu:{title:string; url:string ;icon: React.ComponentType}[]= [
 {
@@ -73,3 +73,29 @@ export const Slider:{id:number;url:string}[]= [
         url:'/format_webp.jpeg'
     },
 ]
+export const Categories:{title:string; subcategories:string[],url:string ;icon: React.ComponentType}[] = [
+    {
+      title: "Araba",
+      url:'/arabalar',
+      icon: IoCarSport,
+      subcategories: ["Sedan", "SUV", "Hatchback"],
+    },
+    {
+      title: "Telefon",
+      url:'elektronik',
+      icon: IoPhonePortrait ,
+      subcategories: ["iPhone", "Samsung", "Xiaomi"],
+    },
+    {
+      title: "Elektronik",
+      url:'elektronik',
+      icon: IoHome ,
+      subcategories: ["TV", "Laptop", "Kamera"],
+    },
+    {
+      title: "Giyim",
+      url:'giyim',
+      icon: IoShirt ,
+      subcategories:["erkek giyim","kadın giyim"]
+    }
+  ];

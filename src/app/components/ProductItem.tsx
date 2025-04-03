@@ -7,7 +7,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 
 const ProductItem = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen light:bg-gray-100">
+    <div className="flex items-center justify-center light:bg-gray-100">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:px-8 px-5 py-4 mt-5 max-w-6xl w-full">
         {Product.map((product, indx) => {
           return (
@@ -17,7 +17,7 @@ const ProductItem = () => {
             >
               <Link href={`/product/${product.id}`} className="relative group overflow-hidden w-full">
                 {product.indirim && (
-                  <div className="absolute top-0 left-2 bg-green-800 bg-opacity-50 text-white text-xs px-3 py-1 rounded transition-opacity duration-300">
+                  <div className="absolute top-0 right-0  bg-green-800 bg-opacity-50 text-white text-xs px-3 py-1 rounded transition-opacity duration-300">
                     {product.indirim}
                   </div>
                 )}

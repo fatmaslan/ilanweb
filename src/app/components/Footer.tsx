@@ -6,27 +6,24 @@ import { FaXTwitter } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div className="light:bg-gray-100  p-5">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row text-center justify-between gap-8">
-        
-        {/* Yardım Bölümü */}
-        <div className="flex-1 light:text-green-950 dark:text-white">
-          <h3 className="font-bold text-lg mb-2">Yardım</h3>
-          <p>SSS</p>
-          <p>Yardım</p>
-          <p>İletişim</p>
-        </div>
+    <div className="bg-gray-100 p-5">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        <div className="flex flex-row gap-8 md:gap-16 text-green-950 dark:text-white w-full md:w-auto justify-between">
+          <div className='flex flex-col ml-0 md:ml-10'>
+            <h3 className="font-bold text-lg mb-2">Yardım</h3>
+            <p>SSS</p>
+            <p>Yardım</p>
+            <p>İletişim</p>
+          </div>
 
-        {/* Livben Bölümü */}
-        <div className="flex-1 light:text-green-950 dark:text-white">
-          <h3 className="font-bold text-lg mb-2">Livben</h3>
-          <p>Ekibimiz</p>
-          <p>Kariyer</p>
-          <p>Gizlilik Politikası</p>
+          <div className='flex flex-col ml-30 md:ml-70'>
+            <h3 className="font-bold text-lg mb-2 ">Livben</h3>
+            <p>Ekibimiz</p>
+            <p>Kariyer</p>
+            <p>Gizlilik Politikası</p>
+          </div>
         </div>
-
-        {/* Bağlantıda Kal & Sosyal Medya */}
-        <div className="flex-1 flex flex-col items-start light:text-green-950 dark:text-white">
+        <div className="flex flex-col items-center md:items-start md:items-end text-green-950 dark:text-white w-full md:w-auto">
           <h3 className="font-bold text-lg mb-2">Bağlantıda Kal</h3>
           <div className="flex gap-5">
             <FaXTwitter size={24} />
@@ -34,8 +31,6 @@ const Footer = () => {
             <FaWhatsapp size={24} />
           </div>
           <p className="text-gray-600 mt-3">Uygulamayı edinerek 7/24 erişim sağlayın</p>
-          
-          {/* Uygulama Butonları */}
           <div className="flex flex-row gap-2 mt-3">
             <Link href="https://www.apple.com/app-store/" target="_blank">
               <Image
@@ -63,4 +58,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

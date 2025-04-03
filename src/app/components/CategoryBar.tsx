@@ -14,7 +14,7 @@ import { Loader2 } from "lucide-react";
 import { BiCategory } from "react-icons/bi";
 
 
-const categories = [
+export const categories = [
     {
       title: "Araba",
       icon: <IoCarSport size={20} className="text-gray-700" />,
@@ -61,7 +61,7 @@ const CategoryBar = () => {
     setLoadingCategory(categoryTitle)
   }
   return (
-    <div className="w-full py-3 light:text-gray-950 dark:text-white  ">
+    <div className=" hidden md:block w-full py-3 light:text-gray-950 dark:text-white  ">
       <div className="container mx-auto flex justify-center gap-1 overflow-x-auto px-4 md:gap-10">
         <DropdownMenu>
           <DropdownMenuTrigger className=" flex items-center gap-2  font-semibold hover:text-red-600 transition-all cursor-pointer ">
