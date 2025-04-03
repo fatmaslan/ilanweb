@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TopBar from "./components/TopBar";
-import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from "./components/Theme-provider";
 ;
 
 export const metadata: Metadata = {
