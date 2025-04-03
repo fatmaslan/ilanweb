@@ -29,8 +29,8 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full flex px-5 md:px-8 shadow-2xl z-40 mx-auto items-center justify-start">
-      <div className="container flex items-center justify-between h-16 max-w-6xl mx-auto">
+    <div className="w-full flex px-5 md:px-8 shadow-2xl z-40 mx-auto items-center justify-center">
+      <div className="w-full flex items-center justify-between h-16 max-w-6xl mx-auto">
         <Link
           className="font-extrabold text-2xl md:text-3xl text-green-950 transition-all"
           href="/"
