@@ -13,11 +13,11 @@ const ProductItem = () => {
           return (
             <div
               key={indx}
-              className="w-full max-w-[14rem] h-auto flex flex-col shadow-xl rounded-lg items-center justify-between py-6 px-2 bg-gray-200"
+              className="w-full max-w-[14rem] h-auto flex flex-col shadow-xl rounded-lg items-center justify-between  px-0 bg-gray-200"
             >
               <Link href={`/product/${product.id}`} className="relative group overflow-hidden w-full">
                 {product.indirim && (
-                  <div className="absolute top-0 right-0  bg-green-800 bg-opacity-50 text-white text-xs px-3 py-1 rounded transition-opacity duration-300">
+                  <div className="absolute top-0 left-0  bg-red-400 bg-opacity-50 text-white text-xs px-3 py-1 rounded transition-opacity duration-300">
                     {product.indirim}
                   </div>
                 )}
