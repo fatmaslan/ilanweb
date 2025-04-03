@@ -45,7 +45,7 @@ const Navbar = () => {
           />
           <IoSearchOutline className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-green-950" />
         </div>
-        <div className="flex gap-4 md:gap-5 items-center justify-start pr-0 md:pr-24">
+        <div className="flex gap-4 md:gap-5 items-center justify-start ">
           <div
             className="cursor-pointer flex items-center gap-2 hover:text-green-950  "
             onClick={() => setIsLoginOpen(true)}
