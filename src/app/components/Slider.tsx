@@ -15,10 +15,10 @@ import Link from "next/link";
 const SalePage = () => {
   return (
     <div className="flex items-center justify-center light:bg-gray-100 ">
-      <div className="w-full max-w-6xl px-5 md:px-8 py-4 mt-5 mr-6 ">
+      <div className="w-full max-w-6xl px-5 md:px-8 py-4 mt-5 ">
         <Carousel
           plugins={[Autoplay({ delay: 3000 })]}
-          className=" w-[32rem] md:w-[80rem] overflow-x-hidden flex"
+          className=" w-[30rem] md:w-[68rem] overflow-x-hidden flex mr-0 md:mr-12"
         >
           <CarouselContent>
             {Slider.map((item, index) => (
