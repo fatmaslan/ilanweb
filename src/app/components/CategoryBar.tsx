@@ -61,16 +61,14 @@ const CategoryBar = () => {
     setLoadingCategory(categoryTitle)
   }
   return (
-    <div className="w-full py-3  ">
+    <div className="w-full py-3 light:text-gray-950 dark:text-white  ">
       <div className="container mx-auto flex justify-center gap-1 overflow-x-auto px-4 md:gap-10">
-        {/* Dropdown Menü */}
-        
         <DropdownMenu>
-          <DropdownMenuTrigger className="flex items-center gap-2 text-gray-700 font-semibold hover:text-red-600 transition-all cursor-pointer ">
+          <DropdownMenuTrigger className=" flex items-center gap-2  font-semibold hover:text-red-600 transition-all cursor-pointer ">
             <BiCategory size={18}/>
             Kategoriler <FaChevronDown size={12} />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="border-0 shadow-2xl bg-white rounded-md p-4 flex flex-col md:flex-row w-[20rem] md:w-[30rem] mt-5 md:ml-80">
+          <DropdownMenuContent className="border-0 shadow-2xl bg-white text-black rounded-md p-4 flex flex-col md:flex-row w-[20rem] md:w-[30rem] mt-5 md:ml-80">
             <div className="w-full">
               {categories.map((category, index) => (
                 <div
@@ -137,10 +135,10 @@ const CategoryBar = () => {
         {Category.map((item, index) => {
           const Icon = item.icon;
           return (
-            <Link
-              key={index}
+            <div key={index} className="hidden md:block"> 
+            <Link        
               href={`/category/${encodeURIComponent(item.title)}`} 
-              className="flex items-center gap-2 text-gray-700 font-semibold hover:text-red-600 transition-all text-base md:text-xl   " onClick={() => handleCategoryClick(item.title)}
+              className=" flex items-center gap-2 light:text-gray-950 dark:text-white font-semibold hover:text-red-600 transition-all text-base text-lg " onClick={() => handleCategoryClick(item.title)}
             >
               <Icon/>
               {item.title}
@@ -148,6 +146,7 @@ const CategoryBar = () => {
                       <Loader2 className="ml-5 animate-spin" size={16} />
                     )}
             </Link> 
+            </div>
           );
         })}
       </div>

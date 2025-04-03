@@ -29,17 +29,17 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full flex px-5 md:px-10 text-green-950 bg-green-50 shadow-2xl z-40 mx-auto items-center justify-center">
+    <div className="w-full flex px-5 md:px-10 light:text-green-950 dark:text-white shadow-2xl z-40 mx-auto items-center justify-center">
       <div className="container flex items-center justify-between h-16 max-w-7xl mx-auto">
         <Link
           className="font-extrabold text-2xl md:text-3xl text-green-950 transition-all"
           href="/"
         >
-          <Image alt="logo" src='/logo.png' width={150} height={100}/>
+          <Image alt="logo" src='/logo.png' width={150} height={100} className="dark:bg-white dark:rounded-xl dark:h-12"/>
         </Link>
         <div className="hidden md:flex relative w-full max-w-xs md:max-w-md lg:max-w-lg">
           <Input
-            className="outline-none w-full rounded-md text-green-950 px-4 py-2"
+            className="outline-none w-full rounded-md text-green-950 dark:bg-gray-200 px-4 py-2"
             type="text"
             placeholder="Aradığınız ürün veya markayı yazınız..."
           />
