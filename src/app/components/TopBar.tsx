@@ -18,7 +18,8 @@ const TopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
   const { setTheme } = useTheme()
   return (
-    <div className="bg-green-700 text-white flex items-center justify-between px-4 py-1">
+    <div className="w-full max-w-full bg-green-700 text-white flex items-center justify-between px-4 py-1  top-0 left-0 right-0 z-50 shadow-md">
+
       
       <div className="hidden md:flex flex-row gap-10 p-1">
         <Link href="/">Anasayfa</Link>

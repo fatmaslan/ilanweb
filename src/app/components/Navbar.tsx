@@ -29,10 +29,10 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full flex px-5 md:px-8 shadow-2xl z-40 mx-auto items-center justify-center">
-      <div className="w-full flex items-center justify-between h-16 max-w-6xl mx-auto">
+    <div className="w-full max-w-full flex shadow-md z-50 mx-auto items-center justify-between top-0 left-0 right-0">
+      <div className="w-full flex items-center justify-between h-16 max-w-6xl mx-auto ">
         <Link
-          className="font-extrabold text-2xl md:text-3xl text-green-950 transition-all"
+          className="font-extrabold text-2xl md:text-3xl text-green-950 transition-all  mr-auto pl-4 md:pl-12"
           href="/"
         >
           <Image alt="logo" src='/logo.png' width={150} height={100} className=" pl-0 md:pl-5 dark:bg-white dark:rounded-xl dark:h-12"/>
@@ -45,7 +45,7 @@ const Navbar = () => {
           />
           <IoSearchOutline className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer text-green-950" />
         </div>
-        <div className="flex gap-4 md:gap-5 items-center justify-start ">
+        <div className="flex gap-4 md:gap-5 items-center justify-start ml-auto pr-4 md:pr-16">
           <div
             className="cursor-pointer flex items-center gap-2 hover:text-green-950  "
             onClick={() => setIsLoginOpen(true)}
