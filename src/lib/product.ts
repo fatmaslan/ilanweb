@@ -1,4 +1,4 @@
-export const Product:{id:number; title:string; url:string; price:number; kategori:string;indirim:string}[]= [
+export const Product:{id:number;  images: { id: number; image_url: string }[]; title:string; url:string; price:number; kategori:string;indirim:string}[]= [
     {
         id:1,
         title:"Akıllı Saat",
@@ -6,6 +6,8 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
         price:10000,
         kategori:'elektronik',
         indirim:'indirim',
+        images:[
+            {id:1,image_url:'/product-img-3.png'},]
 
     },
 {
@@ -15,6 +17,8 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:2,image_url:'/product-img-3.png'},]
 },
 {
     id:3,
@@ -23,6 +27,8 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:3,image_url:'/product-img-3.png'},]
 },
 {
     id:4,
@@ -31,6 +37,9 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:4,image_url:'/product-img-3.png'},]
+
 },
 {
     id:5,
@@ -39,6 +48,8 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:5,image_url:'/product-img-3.png'},]
 },
 {
     id:6,
@@ -47,6 +58,8 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:6,image_url:'/product-img-3.png'},]
 },
 {
     id:7,
@@ -55,6 +68,8 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:7,image_url:'/product-img-3.png'},]
 },
 {
     id:8,
@@ -63,6 +78,8 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:8,image_url:'/product-img-3.png'},]
 },
 {
     id:9,
@@ -71,5 +88,7 @@ export const Product:{id:number; title:string; url:string; price:number; kategor
     price:10000,
     kategori:'elektronik',
     indirim:'indirim',
+    images:[
+        {id:9,image_url:'/product-img-3.png'},]
 },
 ]

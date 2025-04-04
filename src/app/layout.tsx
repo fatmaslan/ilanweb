@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import TopBar from "./components/TopBar";
 import { ThemeProvider } from "./components/Theme-provider";
+import { CartProvider } from "@/app/context/CartContext";
 ;
 
 export const metadata: Metadata = {
@@ -16,10 +17,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <CartProvider> 
           <TopBar />
           <Navbar />
           <div className="flex flex-col min-h-screen">{children}</div>
           <Footer />
+          </CartProvider>
         </ThemeProvider>
       </body>
     </html>

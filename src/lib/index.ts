@@ -49,13 +49,13 @@ export const Category:{title:string;url:string; icon: React.ComponentType }[]=[
     },
    
     {
-        title:"Blog",
-        url:"/blog",
+        title:"Bloglar",
+        url:"/blogs",
         icon:FaStar
     },
     {
         title:"Blog Detayi",
-        url:"/blogs",
+        url:"/blog",
         icon:FaStar
     },
 ]
